@@ -44,7 +44,7 @@ function VideoPage() {
         <div className="container2_videoPage">
           <div className="video_display_screen_videoPage">
             <ReactPlayer
-              url={`youtube-clone-bice-ten.vercel.app/${vv?.filePath}`}
+              url={`https://youtube-clone-bice-ten.vercel.app/${vv?.filePath}`}
               // src={`https://youtubeclone5031.herokuapp.com/${vv?.filePath}`}
               className={"video_ShowVideo_videoPage"}
               controls
