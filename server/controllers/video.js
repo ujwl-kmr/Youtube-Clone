@@ -13,7 +13,7 @@ export const uploadVideo = async (req, res, next) => {
         videoChanel: req.body.chanel,
         Uploder: req.body.Uploder,
       });
-    //   console.log(file);
+      //   console.log(file);
       await file.save();
       res.status(200).send("File uploded successfully");
     } catch (error) {
@@ -21,11 +21,11 @@ export const uploadVideo = async (req, res, next) => {
     }
   }
 };
-export const getAllvideos= async (req, res)=>{
+export const getAllvideos = async (req, res) => {
   try {
-    const files= await videoFiles.find();
-    res.status(200).send(files)
+    const files = await videoFiles.find();
+    res.status(200).send(files);
   } catch (error) {
-    res.status(404).send(error.message)
+    res.status(404).send(error.message);
   }
-}
+};

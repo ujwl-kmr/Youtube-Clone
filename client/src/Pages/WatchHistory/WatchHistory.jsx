@@ -1,12 +1,8 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-
-import vid from "../../Components/Video/vid.mp4";
-import WHL from '../../Components/WHL/WHL';
+import React from "react";
+import { useSelector } from "react-redux";
+import WHL from "../../Components/WHL/WHL";
 function WatchHistory() {
-
-  
-  const historyList= useSelector(state=>state.HistoryReducer)
+  const historyList = useSelector((state) => state.HistoryReducer);
 
   // const history = [
   //   {
@@ -42,9 +38,7 @@ function WatchHistory() {
   //     description: "description of  video 3",
   //   },
   // ];
-  return (
-    <WHL page={"History"} videoList={historyList}/>
-  )
+  return <WHL page={"History"} videoList={historyList} />;
 }
 
-export default WatchHistory
+export default WatchHistory;

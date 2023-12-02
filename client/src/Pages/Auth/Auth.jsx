@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 import { setCurrentUser } from "../../actions/currentUser";
 import "./Auth.css";
 function Auth({ User, setAuthBtn, setEditCreateChanelBtn }) {
-
   const dispatch = useDispatch();
   const onLogOutSuccess = () => {
     dispatch(setCurrentUser(null));
     alert("Log Out SuccessFully");
   };
-  
+
   return (
     <div className="Auth_container" onClick={() => setAuthBtn(false)}>
       <div className="Auth_container2">
@@ -33,7 +32,7 @@ function Auth({ User, setAuthBtn, setEditCreateChanelBtn }) {
             <>
               {
                 <Link to={`/chanel/${User?.result._id}`} className="btn_Auth">
-                  Your Chanel
+                  Your Channel
                 </Link>
               }
             </>

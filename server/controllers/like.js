@@ -10,14 +10,11 @@ export const likeController = async (req, res) => {
     return res.status(404).send("Video Unavailable..");
   }
   try {
-    const updateLike = await videoFiles.findByIdAndUpdate(
-      _id,
-      {
-        $set:{"Like":Like}
-      }
-    )
-    res.status(200).json(updateLike)
+    const updateLike = await videoFiles.findByIdAndUpdate(_id, {
+      $set: { Like: Like },
+    });
+    res.status(200).json(updateLike);
   } catch (error) {
-    res.status(400).json("error : ",error)
+    res.status(400).json("error : ", error);
   }
 };

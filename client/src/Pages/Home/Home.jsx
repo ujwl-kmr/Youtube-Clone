@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import ShowVideoGrid from "../../Components/ShowVideoGrid/ShowVideoGrid";
 
-// import vid from "../../Components/Video/vid.mp4";
 import "./Home.css";
 function Home() {
-
-  const vids=useSelector(state=>state.videoReducer)?.data?.filter(q=>q).reverse();
+  const vids = useSelector((state) => state.videoReducer)
+    ?.data?.filter((q) => q)
+    .reverse();
   // console.log(videosFile)
   // const vids = [
   //   {
@@ -43,7 +43,7 @@ function Home() {
   //     description: "description of  video 3",
   //   },
   // ];
-  
+
   const NavList = [
     "All",
     "Python",
