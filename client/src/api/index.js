@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: `http://localhost:5500/` });
+const API = axios.create({ baseURL: `youtube-clone-bice-ten.vercel.app` });
 // const API = axios.create({ baseURL: `https://youtubeclone5031.herokuapp.com/` });
 
 API.interceptors.request.use((req) => {
